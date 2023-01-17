@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { ApolloServer } from "apollo-server-micro";
 import { typeDefs } from "./schema";
-import { resolvers } from "./resolveers";
+import { resolvers } from "./resolvers";
 
 export const config = {
   api: {
