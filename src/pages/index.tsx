@@ -2,8 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { GetStaticProps } from "next";
 
-import { Inter } from "@next/font/google";
-
 import { gql } from "@apollo/client";
 import client from "../graphql/apollo-client";
 
@@ -11,16 +9,14 @@ import Countries from "../components/Countries";
 
 import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = await client.query({
     query: gql`
       query Countries {
         countries {
           code
-          name
           emoji
+          name
         }
       }
     `,

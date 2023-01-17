@@ -16,6 +16,6 @@ export const typeDefs = gql`
   type Query {
     getUsers: [User]
     getUser(name: String!): User!
-    getCountry: [Country]
+    countries: [Country]
   }
 `;

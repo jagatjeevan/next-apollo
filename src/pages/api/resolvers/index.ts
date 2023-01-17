@@ -30,7 +30,7 @@ export const resolvers = {
       }
     },
 
-    getCountry: () => {
+    countries: () => {
       return [
         {
           __typename: "Country",

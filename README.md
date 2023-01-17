@@ -16,12 +16,12 @@ Steps done for creating
 - Add graphql modules `npm add graphql graphql-request`
 - In the get static props of the component, create a graphql server and fetch the data.
 
-To test, we have used a dummy server. We would require a endpoint where the data is hosted. Here we are using [Countries](https://countries.trevorblades.com).
+To test, we have used a dummy server. We would require a endpoint where the data is hosted. Here we are using [Countries](http://localhost:3000/api/graphql).
 
 ### Environment setup
 
 Create a environment file to store. (.env.local)
-GRAPHQL_ENDPOINT="https://countries.trevorblades.com"
+GRAPHQL_ENDPOINT="http://localhost:3000/api/graphql"
 
 ## TODO
 
